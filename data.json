@@ -1,0 +1,291 @@
+{
+    "monsters": [
+        {
+            "name": "kobold",
+            "hp": 5,
+            "armor": 12,
+            "damage": 4,
+            "to_hit_bonus": 4,
+            "xp": 25
+        },
+        {
+            "name": "bear",
+            "hp": 34,
+            "armor": 11,
+            "damage": 8,
+            "to_hit_bonus": 6,
+            "xp": 200
+        },
+        {
+            "name": "troll",
+            "hp": 84,
+            "armor": 15,
+            "damage": 11,
+            "to_hit_bonus": 7,
+            "xp": 1800
+        }
+    ],
+    "classes": [
+        {
+            "name": "warrior",
+            "hit_dice": 10,
+            "damage": 10,
+            "armor": 16,
+            "prefered_stats": [
+                "strength",
+                "constitution",
+                "dexterity",
+                "wisdom",
+                "charisma",
+                "intelligence"
+            ],
+            "default_weapon": "830114e7-f720-4c5d-9023-1d64f1ddf6cb",
+            "default_armor": "c0bcf052-b5df-41ac-a38a-7a8894a37bf1"
+        },
+        {
+            "name": "paladin",
+            "hit_dice": 10,
+            "damage": 8,
+            "armor": 18,
+            "prefered_stats": [
+                "charisma",
+                "wisdom",
+                "constitution",
+                "strength",
+                "dexterity",
+                "intelligence"
+            ],
+            "default_weapon": "81660308-a949-4a63-bf2f-11cfc5594819",
+            "default_armor": "75214859-7f2a-41e4-90be-a3e85b7d0250"
+        },
+        {
+            "name": "barbarian",
+            "hit_dice": 12,
+            "damage": 12,
+            "armor": 14,
+            "prefered_stats": [
+                "strength",
+                "constitution",
+                "dexterity",
+                "wisdom",
+                "charisma",
+                "intelligence"
+            ],
+            "default_weapon": "bacd9623-22d3-41b1-8f9b-c71ee04d1dae",
+            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
+        },
+        {
+            "name": "rogue",
+            "hit_dice": 6,
+            "damage": 12,
+            "armor": 16,
+            "prefered_stats": [
+                "dexterity",
+                "charisma",
+                "wisdom",
+                "intelligence",
+                "constitution",
+                "strength"
+            ],
+            "default_weapon": "5cd672a7-7ce8-4457-bf38-5dc8c1f2f6e1",
+            "default_armor": "b1cd23f8-9df2-4762-8167-7d707dc93b0e"
+        },
+        {
+            "name": "ranger",
+            "hit_dice": 10,
+            "damage": 8,
+            "armor": 16,
+            "prefered_stats": [
+                "dexterity",
+                "constitution",
+                "wisdom",
+                "strength",
+                "charisma",
+                "intelligence"
+            ],
+            "default_weapon": "e08da718-3880-49be-ac27-6dc2d1ca7124",
+            "default_armor": "b1cd23f8-9df2-4762-8167-7d707dc93b0e"
+        },
+        {
+            "name": "wizard",
+            "hit_dice": 6,
+            "damage": 12,
+            "armor": 12,
+            "prefered_stats": [
+                "intelligence",
+                "wisdom",
+                "constitution",
+                "dexterity",
+                "charisma",
+                "strength"
+            ],
+            "default_weapon": "31faab9c-29c6-40a5-905b-619723895683",
+            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
+        },
+        {
+            "name": "sorcerer",
+            "hit_dice": 6,
+            "damage": 10,
+            "armor": 14,
+            "prefered_stats": [
+                "charisma",
+                "constitution",
+                "wisdom",
+                "dexterity",
+                "intelligence",
+                "strength"
+            ],
+            "default_weapon": "7f69c6fb-418f-4ccf-ab74-2afd6b1a181f",
+            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
+        },
+        {
+            "name": "druid",
+            "hit_dice": 8,
+            "damage": 6,
+            "armor": 16,
+            "prefered_stats": [
+                "wisdom",
+                "constitution",
+                "dexterity",
+                "strength",
+                "charisma",
+                "intelligence"
+            ],
+            "default_weapon": "4c2a5466-7712-48d0-a317-6a556a0b69d1",
+            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
+        }
+    ],
+    "stat_modifier": {
+        "1": -5,
+        "2": -4,
+        "3": -4,
+        "4": -3,
+        "5": -3,
+        "6": -2,
+        "7": -2,
+        "8": -1,
+        "9": -1,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 1,
+        "14": 2,
+        "15": 2,
+        "16": 3,
+        "17": 3,
+        "18": 4,
+        "19": 4,
+        "20": 5,
+        "21": 5,
+        "22": 6,
+        "23": 6,
+        "24": 7,
+        "25": 7,
+        "26": 8,
+        "27": 8,
+        "28": 9,
+        "29": 9,
+        "30": 10
+    },
+    "items": {
+        "weapons": [
+            {
+                "name": "Long Sword",
+                "damage_die": 8,
+                "item_id": "830114e7-f720-4c5d-9023-1d64f1ddf6cb"
+            },
+            {
+                "name": "Club",
+                "damage_die": 4,
+                "item_id": "4c2a5466-7712-48d0-a317-6a556a0b69d1"
+            },
+            {
+                "name": "Dagger",
+                "damage_die": 4,
+                "item_id": "5cd672a7-7ce8-4457-bf38-5dc8c1f2f6e1"
+            },
+            {
+                "name": "Great Axe",
+                "damage_die": 12,
+                "item_id": "bacd9623-22d3-41b1-8f9b-c71ee04d1dae"
+            },
+            {
+                "name": "Short Sword",
+                "damage_die": 6,
+                "item_id": "172d9932-bd2a-4bc4-bda3-c1dfac5b538b"
+            },
+            {
+                "name": "Greatsword",
+                "damage_die": 10,
+                "item_id": "81660308-a949-4a63-bf2f-11cfc5594819"
+            },
+            {
+                "name": "Battle Axe",
+                "damage_die": 8,
+                "item_id": "bf096ccc-79c4-4beb-bd3b-53ea29952fe6"
+            },
+            {
+                "name": "Long Bow",
+                "damage_die": 8,
+                "item_id": "e08da718-3880-49be-ac27-6dc2d1ca7124"
+            },
+            {
+                "name": "Short Bow",
+                "damage_die": 6,
+                "item_id": "7f69c6fb-418f-4ccf-ab74-2afd6b1a181f"
+            },
+            {
+                "name": "Cross Bow",
+                "damage_die": 6,
+                "item_id": "36c63c24-5607-4f2a-b12e-50e23cd2a6e2"
+            },
+            {
+                "name": "Quaterstaff",
+                "damage_die": 6,
+                "item_id": "31faab9c-29c6-40a5-905b-619723895683"
+            }
+        ],
+            "armor": [
+            {
+                "name": "Leather Armor",
+                "ac": 11,
+                "item_id": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
+            },
+            {
+                "name": "Studded Leather",
+                "ac": 12,
+                "item_id": "b1cd23f8-9df2-4762-8167-7d707dc93b0e"
+            },
+            {
+                "name": "Chain Shirt",
+                "ac": 13,
+                "item_id": "6cabaed3-1785-4c17-8ad7-f9121eca4aa5"
+            },
+            {
+                "name": "Scale Mail",
+                "ac": 14,
+                "item_id": "58988e35-087a-4f85-82f7-6c6ee441eb8c"
+            },
+            {
+                "name": "Half Plate",
+                "ac": 15,
+                "item_id": "75214859-7f2a-41e4-90be-a3e85b7d0250"
+            },
+            {
+                "name": "Chain Mail",
+                "ac": 16,
+                "item_id": "c0bcf052-b5df-41ac-a38a-7a8894a37bf1"
+            },
+            {
+                "name": "Splint Mail",
+                "ac": 17,
+                "item_id": "ccba9256-1876-47ee-b98b-d0e3d6fb8f1a"
+            },
+            {
+                "name": "Full Plate",
+                "ac": 18,
+                "item_id": "7e7b2504-cdcf-4a61-ab00-6fa4361ae082"
+            }
+        ]
+    }
+}
