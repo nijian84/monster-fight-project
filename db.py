@@ -46,7 +46,7 @@ def create_tables():
     Args: none
     Returns: none
     """
-    db.connect()
+    db.connect(reuse_if_open=True)
     db.create_tables([Character])
     db.create_tables([Character_Inventory])
     db.commit()

@@ -105,54 +105,6 @@
             ],
             "default_weapon": "e08da718-3880-49be-ac27-6dc2d1ca7124",
             "default_armor": "b1cd23f8-9df2-4762-8167-7d707dc93b0e"
-        },
-        {
-            "name": "wizard",
-            "hit_dice": 6,
-            "damage": 12,
-            "armor": 12,
-            "prefered_stats": [
-                "intelligence",
-                "wisdom",
-                "constitution",
-                "dexterity",
-                "charisma",
-                "strength"
-            ],
-            "default_weapon": "31faab9c-29c6-40a5-905b-619723895683",
-            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
-        },
-        {
-            "name": "sorcerer",
-            "hit_dice": 6,
-            "damage": 10,
-            "armor": 14,
-            "prefered_stats": [
-                "charisma",
-                "constitution",
-                "wisdom",
-                "dexterity",
-                "intelligence",
-                "strength"
-            ],
-            "default_weapon": "7f69c6fb-418f-4ccf-ab74-2afd6b1a181f",
-            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
-        },
-        {
-            "name": "druid",
-            "hit_dice": 8,
-            "damage": 6,
-            "armor": 16,
-            "prefered_stats": [
-                "wisdom",
-                "constitution",
-                "dexterity",
-                "strength",
-                "charisma",
-                "intelligence"
-            ],
-            "default_weapon": "4c2a5466-7712-48d0-a317-6a556a0b69d1",
-            "default_armor": "c90a4543-d2d1-4a1e-90ee-425c42bb5d4e"
         }
     ],
     "stat_modifier": {

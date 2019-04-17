@@ -36,6 +36,20 @@ def load_file(filename):
     return json_data
 
 
+# Function to grab modifier stat based on stat provided
+def stat_mod(stat):
+    """
+    Function that takes in the stat and determines the bonus modifier and returns that
+    Args: stat Int
+    Returns stat_bonus Int
+    """
+    data = load_file("data.json")
+    mods = data["stat_modifier"]
+    stat_bonus = mods[f"{stat}"]
+    return stat_bonus
+
+
+
 # Function that takes item_id, iterates over all items in JSON Data file, and determines "type"
 def check_item_type(item_id):
     """
@@ -70,7 +84,8 @@ def display_character_sheet(character):
         ["Class:", f'{character_sheet["char_class"]}'],
         ["HP:", f'{character_sheet["hp"]}'],
         ["Damage:", f'{character_sheet["damage"]}'],
-        ["Armor:", f'{character_sheet["armor"]}']
+        ["Armor:", f'{character_sheet["armor"]}'],
+        ["XP:", f'{character_sheet["xp"]}']
     ]
     stats = character_sheet["stats"][0]
     stats_data = [

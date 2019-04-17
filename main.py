@@ -1,8 +1,8 @@
-from common import display_character_sheet, check_item_type, load_file, input_yn
+from common import display_character_sheet, check_item_type, load_file, input_yn, stat_mod
 from character_creation import create
 from db import fetch_char_details, get_id, create_tables, write_xp
 from inventory import display_inv
-from encounters import random_encounter, display_monster, full_encounter_block
+from encounters import main_encounter
 
 
 # Initial greeting to create or load character data
@@ -14,7 +14,7 @@ def greeting():
         char_details = create()
         display_character_sheet(char_details[0])
         display_inv(
-            char_details[0]["name"], char_details[0]["uuid"], char_details[1].values()
+            char_details[0]["uuid"], char_details[1].values()
         )
         return char_details
     else:
@@ -27,7 +27,7 @@ def greeting():
             char_id = get_id(char_name)
             char_details = fetch_char_details(char_id)
             display_character_sheet(char_details)
-            display_inv(char_name, char_id)
+            display_inv(char_id)
             return char_details
         elif secondary_input == "n":
             print("Ok. Quitting..")
@@ -36,5 +36,4 @@ def greeting():
 if __name__ == "__main__":
     create_tables()
     character = greeting()
-    
-    
+    main_encounter(character)
