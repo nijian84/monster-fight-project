@@ -1,9 +1,7 @@
 from common import roll_dice, load_file
-from random import randint, choice
-from kafka_func import kafka_produce
+from random import randint
 from db import check_character, get_id, write_character, fetch_char_details, write_items
 import uuid
-import json
 
 # Function that accepts Input, and updates the JSON blob.
 def create_character(data):
